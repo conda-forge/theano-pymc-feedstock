@@ -10,7 +10,7 @@ source:
   patches:
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - theano-cache = bin.theano_cache:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -28,31 +28,11 @@ requirements:
     - numpy >=1.9.1
     - scipy >=0.14
     - pygpu >=0.7.0,<0.8
+    - jax  # [py>=37 and not win]
 
 test:
   imports:
     - theano
-    - theano.compile
-    - theano.compile.sandbox
-    - theano.compile.tests
-    - theano.gof
-    - theano.gof.tests
-    - theano.gpuarray
-    - theano.gpuarray.dnn
-    - theano.gpuarray.linalg
-    - theano.misc
-    - theano.sandbox
-    - theano.scalar
-    - theano.scalar.tests
-    - theano.sparse
-    - theano.sparse.tests
-    - theano.tensor
-    - theano.tensor.nnet
-    - theano.tensor.nnet.tests
-    - theano.tensor.signal
-    - theano.tensor.signal.tests
-    - theano.tensor.tests
-    - theano.tests
   commands:
     - theano-cache help
 
