@@ -1,4 +1,4 @@
-{% set version = "1.0.14" %}
+{% set version = "1.0.15" %}
 
 package:
   name: theano-pymc
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/T/Theano-PyMC/Theano-PyMC-{{ version }}.tar.gz
-  sha256: 7d78fe40f0935ad7acd2aa0aaad76d78a969dabbcd8bb4b93af122cfaf96fcba
+  sha256: ba105ddf8d83bbbe159e9ad1d5128c400c6cffeda662eb77203f786ee816db09
   patches:
 
 build:
@@ -29,6 +29,7 @@ requirements:
     - scipy >=0.14
     - pygpu >=0.7.0,<0.8
     - jax  # [py>=37 and not win]
+    - filelock
 
 test:
   imports:
@@ -37,12 +38,12 @@ test:
     - theano-cache help
 
 about:
-  home: http://deeplearning.net/software/theano/
+  home: https://github.com/pymc-devs/Theano-PyMC
   license: BSD-3-Clause
-  summary: Fork of Theano for PyMC3. An optimizing compiler for evaluating mathematical expressions on CPUs and GPUs.
+  summary: An optimizing compiler for evaluating mathematical expressions. Theano-PyMC is a fork of the Theano library maintained by the PyMC developers.
   license_file: LICENSE.txt
   dev_url: https://github.com/pymc-devs/Theano-PyMC/
-  doc_url: http://deeplearning.net/software/theano/
+  doc_url: https://theano-pymc.readthedocs.io/en/latest/
 
 extra:
   recipe-maintainers:
