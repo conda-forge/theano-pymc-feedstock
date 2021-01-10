@@ -1,17 +1,17 @@
 About theano-pymc
 =================
 
-Home: http://deeplearning.net/software/theano/
+Home: https://github.com/pymc-devs/Theano-PyMC
 
 Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/theano-pymc-feedstock/blob/master/LICENSE.txt)
 
-Summary: Fork of Theano for PyMC3. An optimizing compiler for evaluating mathematical expressions on CPUs and GPUs.
+Summary: An optimizing compiler for evaluating mathematical expressions. Theano-PyMC is a fork of the Theano library maintained by the PyMC developers.
 
 Development: https://github.com/pymc-devs/Theano-PyMC/
 
-Documentation: http://deeplearning.net/software/theano/
+Documentation: https://theano-pymc.readthedocs.io/en/latest/
 
 Current build status
 ====================
