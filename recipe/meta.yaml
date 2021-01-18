@@ -10,7 +10,7 @@ source:
   patches:
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - theano-cache = bin.theano_cache:main
   script: {{ PYTHON }} -m pip install . -vv
