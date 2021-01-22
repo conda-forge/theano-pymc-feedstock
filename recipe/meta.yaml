@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: theano-pymc
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/T/Theano-PyMC/Theano-PyMC-{{ version }}.tar.gz
-  sha256: 7c31c5023e28d160fa11aa6f1a9adccbac8581e7f1bf0c29f3d2a91592616a8b
+  sha256: f879e41f120231adfcd9c6d0337d0817a5b6d23ee6d52ef2847f1eff08eb1ff8
   patches:
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - theano-cache = bin.theano_cache:main
   script: {{ PYTHON }} -m pip install . -vv
