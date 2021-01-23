@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: theano-pymc
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/T/Theano-PyMC/Theano-PyMC-{{ version }}.tar.gz
-  sha256: f879e41f120231adfcd9c6d0337d0817a5b6d23ee6d52ef2847f1eff08eb1ff8
+  sha256: 5da6c2242ea72a991c8446d7fe7d35189ea346ef7d024c890397011114bf10fc
   patches:
 
 build:
