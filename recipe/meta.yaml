@@ -1,11 +1,11 @@
 {% set version = "1.1.2" %}
 
 package:
-  name: theano-pymc
+  name: aesara
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/T/Theano-PyMC/Theano-PyMC-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/T/aesara/aesara-{{ version }}.tar.gz
   sha256: 5da6c2242ea72a991c8446d7fe7d35189ea346ef7d024c890397011114bf10fc
   patches:
 
@@ -38,12 +38,12 @@ test:
     - theano-cache help
 
 about:
-  home: https://github.com/pymc-devs/Theano-PyMC
+  home: https://github.com/pymc-devs/aesara
   license: BSD-3-Clause
-  summary: An optimizing compiler for evaluating mathematical expressions. Theano-PyMC is a fork of the Theano library maintained by the PyMC developers.
+  summary: An optimizing compiler for evaluating mathematical expressions. Aesara is a fork of the Theano library maintained by the PyMC developers.
   license_file: LICENSE.txt
-  dev_url: https://github.com/pymc-devs/Theano-PyMC/
-  doc_url: https://theano-pymc.readthedocs.io/en/latest/
+  dev_url: https://github.com/pymc-devs/aesara/
+  doc_url: https://aesara.readthedocs.io/en/latest/
 
 extra:
   recipe-maintainers:
